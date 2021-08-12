@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CnD Highs</title>
+	<meta name="description" content="CnD Highs - Homemade Edible's and More... ">
+    <meta name="location" content="CnD Highs Corp. Long Beach, California, CA 90740, ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <link rel="stylesheet" href="./-addtional-styling-page.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: Aclonica, Courgette}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+    * {box-sizing: border-box}
+    body {font-family: Lucida Calligraphy, sans-serif; margin:0}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+
+    /* Slideshow container */
+    .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  .checked {
+  color: orange;
+}
+  /*SHOWCASE SECTION ADDED 09/08/2021*/
+  #showcase{
+    min-height: 300px;
+    background-image: url('./showcase-img.jpg');
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+  }
+  .showcase-container{
+    margin-top: 50px;
+  }
+  .showcase-container h1{
+    font-size:50px;
+  }
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  } 
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #000000;
+    font-size: 17px;
+    font-style: bold;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+</style>
+
+<!--BODY SECTION-->
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="welcome.png" style="width:100%">
+  <a href="./home.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="./reviews.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>REVIEWS</p>
+  </a>
+  <a href="./photo_gallery.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#shop" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-shopping-cart w3-xxlarge"></i>
+    <p>SHOP</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small" style="opacity: 100%;padding-top: 10px; padding-bottom: 10px;">
+    <a id="menuButton" href="./home.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a id="menuButton" href="./reviews.html" class="w3-bar-item w3-button" style="width:25% !important">REVIEWS</a>
+    <a id="menuButton" href="./photo_gallery.html" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a id="menuButton" href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+	<a id="menuButton" href="#shop" class="w3-bar-item w3-button" style="width:25% !important">SHOP</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <section id="showcase">
+    <div class="showcase-container">
+      <h1>CnD Highs</h1>
+      <p>Home Made Edible's & More</p>
+    </div>
+
+  </section>
+
+    <!-- </header> -->
+    <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+
+    <!-- Additional style and color added 09/08/2021-->
+    <h2 class="w3-text-light-grey" style="text-align: center;">About Our Products</h2>
+    <hr style="width:100%" class="w3-opacity">
+    <p style="text-align: center;color:white;">Our edibles are made with top quality Bud & Extract, We take care when making 
+	all our products to ensure every edible has the correct doesage and is sure to take your pain and stress away, without
+	the damage pharmaceutical medication does to our insides. Our products are made in a clean fresh environment handled
+	and packed with care. (Every Product is Vac packed and Shipped Discretely.</p>
+	
+	<hr style="width:100%" class="w3-opacity">
+	
+	
+	<br>
+	
+	<!-- Start price grid -->
+    <h2 class="w3-padding-16 w3-text-light-grey" style="text-align: center;color:white;" >Our Products</h2>
+    <p style="text-align: center;color:white; margin-bottom: 80px;">All our edibles are made to order so please allow 4-7 days for Delivery</p>
+    
+    <p class="w3-wide" style="color: #29D33D;">Brownies--Strength%</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%">90%</div>
+    </div>
+	<p class="w3-wide" style="color: #29D33D;">THC Liqud--Strength%</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%">95%</div>
+	</div>
+	
+	  <p class="w3-wide" style="color: #29D33D;">White Smarties Bar--Strength%</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%">90%</div>
+    </div>
+	  
+	<p class="w3-wide" style="color: #29D33D;">UK Flower--Quality%</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:100%">100%</div>
+    </div>
+    <p class="w3-wide" style="color: #29D33D;">Choc Bars--Strength%</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:100%">100%</div>
+    </div><br>
+	
+	<p class="w3-wide" style="color: #29D33D;">Cali Packs--Quality%</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:100%">100%</div>
+    </div><br>
+    
+	
+    <!-- Grid for pricing tables -->
+	
+    <div class="w3-row-padding" style="margin:0 -16px" id="shop">
+	<h3 class="w3-padding-16 w3-text-light-grey" style="text-align: center;">Our Prices</h3>
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off" style="width: 100%;">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Edibles</li>
+          <li class="w3-padding-16">Brownies (300mg Each)</li>
+          <li class="w3-padding-16">Galaxy (500mg Each)</li>
+		      <li class="w3-padding-16">Mint Chocolate Bar (300mg Each)</li>
+		      <li class="w3-padding-16">White Smartie Bar (500mg Each)</li>
+          <li class="w3-padding-16">
+            <h2>Contact us for purchase</h2>
+            <span class="w3-opacity">+3.99 P+P </span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            Pickups in Irvine (CA)
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off" style="margin-bottom: 20px;">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">UK Flower</li>
+          <li class="w3-padding-16">Dutch Amnesia</li>
+          <li class="w3-padding-16">???????????????</li>
+		      <li class="w3-padding-16">????????????</li>
+          <li class="w3-padding-16">(Always Trying to source more good Flavours)</li>
+          <li class="w3-padding-16">
+            <h2>Contact us for purchase</h2>
+            <span class="w3-opacity">+3.99 P+P </span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            Pickups in Irvine (CA)
+          </li>
+        </ul>
+      </div>
+	  
+	  <div class="w3-row-padding" style="margin:0 -16px">
+
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Cali Flower</li>
+          <li class="w3-padding-16">New Cali Flavours Soon!</li>
+		      <li class="w3-padding-16">???????</li>
+		      <li class="w3-padding-16">?????</li>
+          <li class="w3-padding-16">
+            <h2>?? Per Pack</h2>
+            <span class="w3-opacity">+3.99 P+P </span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+			      Pickups in Irvine (CA)
+          </li>
+        </ul>
+      </div>
+	  
+	  <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off" style="margin-bottom: 20px;">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">THC Vape Juice (10ML)</li>
+		      <li class="w3-padding-16">Calypso Grape Berry</li>
+		      <li class="w3-padding-16">Calypso Triple Melon</li>
+		      <li class="w3-padding-16">Calypso Pineapple</li>
+		      <li class="w3-padding-16">Refreshers</li>
+		      <li class="w3-padding-16">Fruit Pastilles </li>
+          <li class="w3-padding-16">
+            <h2>Contact us for purchase Deals on 2+</h2>
+            <span class="w3-opacity">+3.99 P+P </span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+		        Pickups in Irvine (CA) 
+          </li>
+        </ul>
+      </div>  
+	 
+    <!-- End Grid/Pricing tables -->
+	
+    <!-- Reviews -->
+	<!-- added 5star element for reviews 10/08/21 -->
+	<br><h3 class="w3-padding-24 w3-text-light-grey" style="text-align: center;">Our Reputation</h3>
+
+  <!-- Added a Div element with class of snapchat_comment this will be used for formatting the comments.-->
+   <div class="snapchat_comment">
+	<br><br><img src="sc.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:50px">
+    <p style="color: #ffffff;"><span class="w3-large w3-margin-right">Ayrshire Ghost.</span> Stuff is pure fire mate &#128525; <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span></p> <br>
+  </div> 
+  
+  <div class="snapchat_comment">
+    <img src="sc.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:50px">
+    <p style="color: #ffffff;"><span class="w3-large w3-margin-right">TJ.</span> They are brillant mate best eddibles i have had 10/10. <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span></p><br>
+  </div>
+    
+  <div class="snapchat_comment">
+    <br><br><img src="sc.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:50px">
+    <p style="color: #ffffff;"><span class="w3-large w3-margin-right">Grant.</span> Ate the pack i got last night the hot chocolate was class took my pain away within the hour. <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span></p> 
+	</div>
+
+  <div class="snapchat_comment">
+	<br><br><img src="sc.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:50px">
+    <p style="color: #ffffff;"><span class="w3-large w3-margin-right">Scot.</span> Love the Refreshers Vape oil bro getting more soon :P <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span></p> <br>
+  </div> 
+  <!-- End reviews Section -->
+  </div>
+  <br>
+  <!-- Portfolio Section -->
+</div>  
+
+  <div class="slideshow-container" id="photos">
+
+<div class="mySlides fade">
+  <div class="numbertext">1</div>
+  <img src="edds/gummies.jpg" style="width:100%">
+  <div class="text">THC Juice</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2</div>
+  <img src="edds/gum.jpg" style="width:100%">
+  <div class="text">Black Cherry Pie</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3</div>
+  <img src="edds/mini-jaz.jpg" style="width:100%">
+  <div class="text">Dutch Amnesia</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4</div>
+  <img src="edds/brownie.jpg" style="width:100%">
+  <div class="text">Fresh Brownie</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5</div>
+  <img src="edds/old-school.jpg" style="width:100%">
+  <div class="text">Getting Post Ready</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6</div>
+  <img src="edds/apple1.jpg" style="width:100%">
+  <div class="text">Apple Fritter</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7</div>
+  <img src="edds/apple2.jpg" style="width:100%">
+  <div class="text">Apple Fritter</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8</div>
+  <img src="edds/cherry.jpg" style="width:100%">
+  <div class="text">Black Cherry Pie</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9</div>
+  <img src="edds/butter.jpg" style="width:100%">
+  <div class="text">Canna Butter</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10</div>
+  <img src="edds/bar2.jpg" style="width:100%">
+  <div class="text">Galaxy Bar</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    <!-- End photo grid -->
+    
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey" style="text-align: center;">Contact Us</h2>
+    <hr style="width:100%" class="w3-opacity">
+
+    <p style="text-align: center; color: #ffffff;">Please take the time to leave feedback on our products
+		its very much appreciated.</p>
+    
+  <!-- End Contact Section -->
+  </div>
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-85de7f5b-fa49-4d36-b120-c0df7892f9e8"></div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <h5 style="text-align: center; color: #ffffff;">Contact Us on SnapChat, WhatsApp or Telegram Click on the Icons below to add Us on SnapChat + Telegram (WhatsApp & Telegram Number (+44)7544309686)</h5>
+    <a href="https://www.snapchat.com/add/cookie_med" style="display: flex; justify-content: center;"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+	<a href="https://telegram.me/CnDHighs"style="display: flex; justify-content: center;"><i class="fa fa-telegram w3-hover-opacity "></i></a>
+	<hr style="width:100%" class="w3-opacity">
+	
+	<p class="w3-medium">Powered by <a target="_blank" class="w3-hover-text-green">AL Designs + CCUK</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>

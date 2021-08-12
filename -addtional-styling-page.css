@@ -1,0 +1,70 @@
+.snapchat_comment{
+    margin-right: 5px;
+}
+
+#side-nav{
+    height: 100%;
+    width:0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left:0;
+    transition: 0.5s;
+}
+
+/* Style Settings For Added Star Rating System Using Font Awesome (fas) 11/08/2021 */
+.widget-container{
+    width:100%;
+    display: flex;
+    
+    justify-content: center;
+    padding: 20px;
+}
+.star-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.star-box label{
+    text-align: center;
+}
+
+.star-widget .star-box{
+    font-size: 20px;
+    padding:10px;
+    transition: all 0.2s ease;
+    float: right;
+    width: 20%;
+}
+.star-box label:hover{
+    color: #d3b429;
+}
+a:not(:checked)~a:hover,
+a:not(:checked)~a:hover~a{
+    color: #d3b429;
+}
+input:checked~label{
+    color: #d3b429;
+}
+.landing-container{
+    margin:10px;
+    
+}
+
+#moveThis{
+    margin-right:100px;
+}
+@media screen and (max-width:600px){
+	#moveThis{
+        margin-right:5px;
+    }
+}
+video {
+  width: 100%;
+  height: auto;
+}
+holdicons{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>CnD Highs</title>
+	<meta name="description" content="CnD Highs - Homemade Edible's and More... ">
+    <meta name="location" content="CnD Highs Corp. Long Beach, California, CA 90740, ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <link rel="stylesheet" href="./-addtional-styling-page.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+      <!--Internal CSS Section -09/08/2021-->
+      <style>
+        body, h1,h2,h3,h4,h5,h6 {font-family: Aclonica, Courgette}
+        .w3-row-padding img {margin-bottom: 12px}
+        /* Set the width of the sidebar to 120px */
+        .w3-sidebar {width: 120px;background: #222;}
+        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+        #main {margin-left: 120px}
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+        h1,p{font-size: 11px}
+}
+      </style>
+
+      <!-- JavaScript Section 09/08/2021-->
+      <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Aug 14, 2021 12:00:00").getTime();
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+        
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          // Display the result in the element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+        
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            window.location.href = "./landing-page.html";
+          }
+        }, 1000);
+        </script>
+      <!-- Page Title Section 09/08/2021-->
+      <title>CnD Highs</title>
+    </head>
+    <body class="w3-black">
+
+
+<!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+      <h1 style="font-size: 30px;">CnD Highs</h1>
+        <p>is down for maintenance<br>
+	      Our Site will launch in</p>
+	      <!-- Display the countdown timer in an element -->
+        <p id="demo"></p>
+      </h1>
+      <img src="welcome.png" alt="C N D Homepage Logo" class="w3-image" width="992px" height="1108px">
+    </header>
+
+ <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey" style="text-align: center;">Contact Us</h2>
+    <hr style="width:100%" class="w3-opacity">
+
+    <p style="text-align: center; color: #ffffff;">Please take the time to leave feedback on our products
+		its very much appreciated.</p>
+    
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <h5 style="text-align: center; color: #ffffff;">Contact Us on SnapChat, WhatsApp or Telegram Click on the SC Icon below to add Us on SnapChat (WhatsApp & Telegram Number (+44)7544309686)</h5>
+    <a href="https://www.snapchat.com/add/cookie_med" style="display: flex; justify-content: center;"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <p class="w3-medium">Powered by <a target="_blank" class="w3-hover-text-green">AL Designs + CCUK</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
